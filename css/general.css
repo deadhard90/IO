@@ -1,7 +1,6 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	height: 100vh;
 }
 
 .content {
@@ -19,6 +18,7 @@ body {
 	width: 50vw;
 	height: 100vh;
 	isolation: isolate;
+	overflow: hidden;
 }
 
 .dark {
@@ -40,7 +40,26 @@ body {
 	-webkit-box-shadow: 0px 10px 13px -7px #000000, inset -20px 39px 50px 21px #000000; 
 	box-shadow: 0px 10px 13px -7px #000000, inset -20px 39px 50px 21px #000000;
 	animation: fly 2s infinite;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
+	#eye {
+		position: relative;
+		width: 50px;
+		height: 2px;
+		border-radius: 50%;
+		background: radial-gradient(circle at 50px 50px, #264691, #000);
+		transition: 3s;
+	}
+
+	#eye::after {
+		width: 30px;
+		height: 30px;
+		background-color: green;
+	}
 
 .bland {
 	mix-blend-mode: screen;
@@ -53,7 +72,7 @@ body {
 }
 
 	.rock {
-		position: fixed;
+		position: absolute;
 		bottom: 0px;
 		left: calc(50% - 200px);
 		width: 200px;
@@ -82,7 +101,7 @@ body {
 		height: 50px;
 		background-color: red;
 		clip-path: polygon(54% 0%, 44% 1%, 43% 10%, 35% 13%, 26% 23%, 37% 30%, 37% 40%, 41% 53%, 29% 73%, 49% 54%, 48% 44%, 59% 48%, 65% 69%, 66% 44%, 54% 36%, 54% 19%, 68% 16%, 76% 0%, 64% 11%, 55% 11%, 52% 10%);
-		animation: run 2s linear;
+		animation: run 2.2s linear;
 	}
 
 	@keyframes run {
@@ -131,6 +150,8 @@ body {
 .baner {
 	width: 300px;
 	text-align: center;
+	position: fixed;
+	z-index: 2;
 }
 
 .baner h1 {

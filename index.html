@@ -2,12 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>IO</title>
 		<!--<script src="js/dragbleIO.js" defer></script>-->
 		<!--<script src="js/loading.js" defer></script>-->
 		<!--<script src="js/overIO.js" defer></script>-->
 		<!--<script src="js/flyIO.js" defer></script>-->
 		<!--<script src="js/menuIO.js" defer></script>-->
+		<script src="js/randomEye.js" defer></script>
 	<style type="text/css">
 		@import url(css/general.css);
 	</style>
@@ -26,15 +28,19 @@
 				</div>
 			</div>
 			<div class="bland dark"></div>
-			<article class="baner">
-				<h1>Do you need a website?</h1>
-				<h2>We will do it!</h2>
-				<p>You no longer need to look for a performer of your task, just contact us and order your website</p>
-				<button>OK</button>
-			</article>
 		</section>
 		<section class="overlay">
-			<div id="IO"></div>
+			<div id="IO">
+				<div id="eye">
+					<span class="eye"></span>
+				</div>
+			</div>
+		</section>
+		<section class="baner">
+		    <h2>Do you need a website?</h2>
+			<h1>We will do it!</h1>
+			<p>You no longer need to look for<br> a performer of your task,<br> just contact us<br> and order your website</p>
+			<button id="OK">OK</button>
 		</section>
 	</main>
 </body>
