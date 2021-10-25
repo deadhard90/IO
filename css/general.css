@@ -51,7 +51,7 @@ body {
 		width: 50px;
 		height: 2px;
 		border-radius: 50%;
-		background: radial-gradient(circle at 50px 50px, #264691, #000);
+		background: radial-gradient(circle at 50px 150px, #264691, #000);
 		transition: 3s;
 	}
 
