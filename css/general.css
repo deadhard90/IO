@@ -82,7 +82,7 @@ body {
 	}
 
 	.runWhithlight {
-		position: relative;
+		position: fixed;
 		width: 50px;
 		top: calc(100% - 200px);
 		left: calc(100% - 35px);
